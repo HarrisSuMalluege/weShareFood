@@ -1,0 +1,20 @@
+
+//the folder code doesn't output any css
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//for the basic product definitions
+@import "base/base";
+
+//define the overall layout of the project
+@import "layout/layout";
+
+
+//one file for each compents
+@import "components/components";
+
+
+
+
+//style for specific pages of the project

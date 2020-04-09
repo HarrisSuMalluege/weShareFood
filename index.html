@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"  />
+        <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" /> -->
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title> WSF &Iota; We Share Food</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.png" alt="weShareFood" class="logo"></a>
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Tell me your favorite">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button> 
+
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+                        </svg>
+                        <span class="user-nav__notification">6</span>
+                    </div> 
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bubbles4"></use>
+                        </svg>
+                        <span class="user-nav__notification">18</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Emily</span>
+                    </div>
+                </nav>
+            </div>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                                </svg>
+                                <span>Recipes</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-compass"></use>
+                                </svg>
+                                <span>Find your neighbors</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map2"></use>
+                                </svg>
+                                <span>Contact us</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2020 by Portfolio. All rights reserved.
+                    </div>
+                </nav>
+                <main class="food-view">
+                    <div class="gallery">
+                        <figure class="gallery_item">
+                            <img src="img/food-1.jpg" alt="Flufy pancake" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery_item">
+                            <img src="img/food-2.jpg" alt="Flufy pancake" class="gallery__photo">
+                        </figure>
+                        <figure class="gallery_item">
+                            <img src="img/food-3.jpg" alt="Flufy pancake" class="gallery__photo">
+                        </figure>
+                    </div>
+
+                    <div class="overview">
+                        <h1 class="overview__heading">
+                            Most Popular Food
+                        </h1>
+                        <div class="overview__stars">
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                            </svg>
+                            <svg class="overview__icon-star">
+                                <use xlink:href="img/sprite.svg#icon-star-half"></use>
+                            </svg>
+                        </div>
+                        <div class="overview__location">
+                            <svg class="overview__icon-location">
+                                <use xlink:href="img/sprite.svg#icon-location2"></use>
+                            </svg>
+                            <button class="btn-inline"> Minneapolis, MN</button>
+                        </div>
+
+                        <div class="overview__rating">
+                            <div class="overview__rating-average">9.2</div>
+                            <div class="overview__rating-count">868 votes</div>
+                        </div>
+                    </div>
+
+                    <div class="detail">
+                        <div class="description">
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, 
+                                quam doloribus modi repellat officiis eveniet accusamus voluptatum voluptates dolore? 
+                                Alias labore hic similique quos numquam placeat veniam facilis molestias amet.
+                            </p>
+                            <p class="paragraph">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                                quam doloribus modi repellat officiis eveniet accusamus voluptatum voluptates dolore?
+                                Alias labore hic similique quos numquam placeat veniam facilis molestias amet.
+                            </p>
+                            <ul class="list">
+                                <li class="list__item">Natural Healthy Food </li>
+                                <li class="list__item">Organic home made food </li>
+                                <li class="list__item">Italian Food </li>
+                                <li class="list__item">American burgers</li>
+                                <li class="list__item">Spanish cooking </li>
+                                <li class="list__item">Asian coursin</li>
+                                <li class="list__item">Natural Healthy Food </li>
+                                <li class="list__item">Natural Healthy Food </li>
+                            </ul>
+                            <div class="recommend">
+                                <p class="recommend__count">
+                                    John and 3 other friends recommend this food.
+                                </p>
+                                <div class="recommend__friends">
+                                    <img src="img/user-3.jpg" alt="John" class="recommend__photo">
+                                    <img src="img/user-4.jpg" alt="John" class="recommend__photo">
+                                    <img src="img/user-5.jpg" alt="John" class="recommend__photo">
+                                    <img src="img/user-6.jpg" alt="John" class="recommend__photo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-reviews">
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, 
+                                    maiores voluptates laboriosam...
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-7.jpg" alt="Paul" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Paul Smith</p>
+                                        <p class="review__user-date">Mar 05th, 2020</p>
+                                    </div>
+                                    <div class="review-rating">8.6</div>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur,
+                                    maiores voluptates laboriosam eveniet...
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-8.jpg" alt="Paul" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Christina West</p>
+                                        <p class="review__user-date">Apr 08th, 2020</p>
+                                    </div>
+                                    <div class="review-rating">9.2</div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="btn-inline">Show all <span>&rarr;</span></button>
+                        </div>
+
+                    </div>
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 4 free courses incoming fews days!
+                        </h2>
+                        <button class="btn">
+                            <span class="btn__visible">Book now</span>
+                            <span class="btn__invisible">Only 4 seats left</span>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+        
+       
+
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>

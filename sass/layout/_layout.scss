@@ -1,0 +1,72 @@
+.container {
+    max-width: 130vh;
+    margin: .5rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 50rem;
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: var(--line);
+    position: sticky;
+    top: .5rem;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    //make item vertically at center
+    
+}
+
+.content {
+    display: flex;  //set layout side by side
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 23%;
+
+    //to set the copyright text to display at the bottom
+    display: flex;
+    flex-direction: column;             //use this element to make the content display vertically
+    justify-content: space-between;     //make the content between one and another
+
+}
+
+.food-view {
+    background-color: #fff;
+    flex: 1;    //use this property to expand rest all the space
+    
+}
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-2);
+    border: var(--line);
+}
+
+.description {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-reviews {
+    // background-color: #fff;
+    // box-shadow: var(--shadow-light);
+    // padding: 3rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
