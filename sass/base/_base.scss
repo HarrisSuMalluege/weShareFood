@@ -25,6 +25,12 @@
     --line: .1rem solid var(--color-grey-light-2);
 }
 
+$bp-largest: 75em; //breakpoint lasrgest 1200px (1200px/16px)
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px (900px / 16px)
+$bp-small: 37.5em;   //600px (600px / 16px)
+$bp-smallest: 31.25em; // 500px  (500px / 16)
+
 
 * { margin: 0; padding: 0;}
 
@@ -36,6 +42,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;   // 1rem = 10px, 10px / 16px =62.5%
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 50%;    //1rem = 8px, 8px / 16
+    }
 }
 //when the font can't load from google, then use default setting
 body {
@@ -47,5 +57,10 @@ body {
     background-image: linear-gradient(to right bottom, var(--color-background-light), var(--color-background-dark)); 
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;  //default view hight
+    //min-height: 100vh;  //default view hight
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-grey-light-1);
 }

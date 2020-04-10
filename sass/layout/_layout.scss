@@ -1,10 +1,22 @@
 .container {
-    max-width: 130vh;
-    margin: .5rem auto;
+    max-width: 85%;
+    margin: .3rem auto;
     background-color: var(--color-grey-light-2);
     box-shadow: var(--shadow-dark);
-
     min-height: 50rem;
+
+    @media only screen and (max-width: $bp-largest) { 
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+
 }
 
 .header {
@@ -19,11 +31,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;    //make item vertically at center
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 12rem;
+    }
     
 }
 
 .content {
     display: flex;  //set layout side by side
+
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
 }
 
 .sidebar {
@@ -50,6 +72,15 @@
     padding: 4.5rem;
     background-color: var(--color-grey-light-2);
     border: var(--line);
+
+        //to make the content vertically center
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+        }
+        //to make the content vertically 
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;   //1rem = 8px, 8px / 16
+        }
 }
 
 .description {
@@ -58,6 +89,17 @@
     padding: 3rem;
     flex: 0 0 60%;
     margin-right: 4.5rem;
+
+        //to make the content vertically center
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem;
+            margin-right: 3rem;
+        }
+        //to make the content vertically 
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
 }
 
 .user-reviews {
