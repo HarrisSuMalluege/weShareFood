@@ -22,16 +22,16 @@
     "copyfiles": "^2.0.0",
     "imagemin-cli": "^3.0.0",
     "lite-server": "^2.3.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.1",
     "rimraf": "^2.6.2",
-    "usemin-cli": "^0.5.1"
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.12.9"
   }
 }

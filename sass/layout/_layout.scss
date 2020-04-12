@@ -1,9 +1,9 @@
-.container {
-    max-width: 85%;
+.container-food {
+    // max-width: 100%;
     margin: .3rem auto;
-    background-color: var(--color-grey-light-2);
-    box-shadow: var(--shadow-dark);
-    min-height: 50rem;
+    // background-color: var(--color-grey-light-2);
+    // box-shadow: var(--shadow-dark);
+    // min-height: 50rem;
 
     @media only screen and (max-width: $bp-largest) { 
         margin: 0;
