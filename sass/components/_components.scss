@@ -4,12 +4,17 @@
 
 .logo {
     height: 4.25rem;
-    // width: 20rem;
+    width: 18rem;
     margin-left: 3rem;
-    @media only screen and (max-width: $bp-smallest) {
+
+    @media only screen and (max-width: $bp-small) {
         width: 12rem;
         margin-left: 1rem;
     }
+    // @media only screen and (max-width: $bp-smallest) {
+    //     width: 12rem;
+    //     margin-left: 1rem;
+    // }
 }
 
 //////////////////////////////////
@@ -21,12 +26,17 @@
     align-items: center;
     justify-content: center;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         order: 1;
         flex: 0 0 100%; //make the width to cocuppy the entire row
         background-color: var(--color-grey-light-2);
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        order: 1;
+        flex: 0 0 100%; //make the width to cocuppy the entire row
+        background-color: var(--color-grey-light-2);
+    }
 
     &__input {
         font-family: inherit;
@@ -40,7 +50,7 @@
         margin-right: -3.5rem;
 
         @media only screen and (max-width: $bp-smallest) {
-                width: 75%;
+                width: 60%;
             }
 
         &:focus {
@@ -49,7 +59,7 @@
             background-color: var(--color-grey-light-3);
 
             @media only screen and (max-width: $bp-smallest) {
-                width: 80%;
+                width: 76%;
             }
         }
 
@@ -672,11 +682,11 @@
 
     &__visible {
         display: block;
-        padding: 2rem 7.5rem;
+        padding: 1.6rem 7.5rem;
     }
 
     &__invisible {
-        padding: 2rem 0rem;
+        padding: 1.6rem 0rem;
         position: absolute;
         top: -100%;
         left: 0;
@@ -696,7 +706,190 @@
         transform: translateY(100%);
         }
 
-        &:hover &__invisible {
-            top: 0;
+    &:hover &__invisible {
+        top: 0;
+    }
+}
+
+
+/////////////////////////////////////////////
+/////////SOCIAL
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 6rem 0 ;
+
+
+    &__icon{
+        // text-align: center;
+       
+
+        &-1 {
+            font-size: 1.2rem;
+            margin: 0 .8rem;
+            color: var(--color-primary);
+            
+            
+            &:link, 
+            &:visited {
+                color: var(--color-primary);
+            }
+
+            &:hover {
+                color: var(--color-primary-dark);
+            
+            }
+
         }
+         
+
+    }
+
+}
+
+
+/////////////////////////////////////////////
+/////////NEWSLETTERS
+.newsLetters {
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 8rem;
+
+    &__heading-main {
+        font-size: 2.8rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            letter-spacing: .5rem;
+        }
+    }
+
+    &__heading-sub {
+        font-size: 1.8rem;
+        letter-spacing: .3rem;
+        font-weight: 100;
+
+        @media only screen and (max-width: $bp-smallest) {
+            letter-spacing: .2rem;
+        }
+    }
+
+    &__form {
+
+
+        &-signUp {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3rem;
+            &-input {
+                font-family: inherit;
+                font-size: 1.8rem;
+                border: none;
+                padding: 1.2rem 2rem;
+                // border-radius: 30rem;
+                width: 50rem;
+                transition: all .2s;
+                background-color: var(--color-grey-light-2);
+                
+                &:focus {
+                    outline:none;
+                    background-color: var(--color-grey-light-3);
+                }
+
+                &::-webkit-input-placeholder {
+                    font-weight: 100;
+                    color: var(--color-grey-light-4);
+                }
+
+                @media only screen and (max-width: $bp-medium) {
+                    padding: 1rem 2rem;
+                    width: 40rem;
+                }
+                @media only screen and (max-width: $bp-smallest) {
+                    padding: 1rem 2rem;
+                    width: 25rem;
+                }
+            }
+
+            &-btn {
+                font-size: 1.8rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 1.32rem;
+                border: none;
+                background-color: var(--color-primary);
+            
+                &:hover {
+                    background-color: var(--color-primary-dark);
+                }
+
+                @media only screen and (max-width: $bp-smallest) {
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                }
+            }
+        }
+
+    }
+
+}
+
+/////////////////////////////////////////////
+/////////FOOTER
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    // margin: 0rem 0 8rem;
+    padding-bottom: 8rem;
+
+    &-bar {
+        list-style: none;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+                    
+                
+        &-item {
+
+            font-size: 1.6rem;
+            // margin-bottom: 8rem;
+
+            @media only screen and (max-width: $bp-smallest) {
+                padding: 1rem;
+            }
+           
+
+            & a:link,
+            & a:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: var(--color-grey-dark-3);
+                padding: 1.5rem;
+            }
+
+            & a:hover {
+                color: var(--color-primary);
+            }
+
+        }
+        
+    }
+
 }
