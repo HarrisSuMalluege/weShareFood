@@ -45,7 +45,8 @@ body {
   color: var(--color-grey-light-1); }
 
 .container-food {
-  max-width: 127vh;
+  max-width: 125vh;
+  padding: 0;
   margin: .3rem auto; }
   @media only screen and (max-width: 75em) {
     .container-food {
@@ -69,7 +70,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 37.5em) {
     .header {
       flex-wrap: wrap;
       align-content: space-around;
@@ -128,7 +129,7 @@ body {
 
 .logo {
   height: 4.25rem;
-  width: 18rem;
+  width: 16rem;
   margin-left: 3rem; }
   @media only screen and (max-width: 37.5em) {
     .logo {
@@ -145,11 +146,6 @@ body {
       order: 1;
       flex: 0 0 100%;
       background-color: var(--color-grey-light-2); } }
-  @media only screen and (max-width: 31.25em) {
-    .search {
-      order: 1;
-      flex: 0 0 100%;
-      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -160,7 +156,7 @@ body {
     width: 90%;
     transition: all .2s;
     margin-right: -3.5rem; }
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 37.5em) {
       .search__input {
         width: 60%; } }
     .search__input:focus {

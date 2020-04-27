@@ -1,9 +1,8 @@
 .container-food {
-    max-width: 127vh;
+    max-width: 125vh;
+    padding: 0;
     margin: .3rem auto;
-    // background-color: var(--color-grey-light-2);
-    // box-shadow: var(--shadow-dark);
-    // min-height: 50rem;
+    
 
     @media only screen and (max-width: $bp-largest) { 
         margin: 0;
@@ -32,11 +31,17 @@
     justify-content: space-between;
     align-items: center;    //make item vertically at center
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-small) {
         flex-wrap: wrap;
         align-content: space-around;
         height: 12rem;
     }
+
+    // @media only screen and (max-width: $bp-smallest) {
+    //     flex-wrap: wrap;
+    //     align-content: space-around;
+    //     height: 12rem;
+    // }
     
 }
 
