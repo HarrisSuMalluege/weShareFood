@@ -321,12 +321,13 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    padding: 1.5rem 3rem; }
+    padding: 1.5rem 2rem; }
     @media only screen and (max-width: 37.5em) {
       .overview__heading {
-        font-size: .4rem;
-        font-weight: 600;
-        padding: 1rem 2rem; } }
+        font-size: 1rem;
+        font-weight: 400;
+        width: 17rem;
+        padding: 1rem 1rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -368,7 +369,7 @@ body {
     text-transform: uppercase; }
     @media only screen and (max-width: 37.5em) {
       .overview__rating-count {
-        font-size: 1rem; } }
+        width: 7rem; } }
 
 .btn-inline {
   border: none;
