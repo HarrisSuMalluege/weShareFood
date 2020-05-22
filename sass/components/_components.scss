@@ -665,12 +665,8 @@
         text-transform: uppercase;
         margin-bottom: 2.5rem;
     }
-}
 
-/////////////////////////////////////////////
-/////////CALL TO ACTION BUTTON
-
-.btn {
+    &__btn {
     font-size: 1.5rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -720,6 +716,12 @@
         top: 0;
     }
 }
+}
+
+/////////////////////////////////////////////
+/////////CALL TO ACTION BUTTON
+
+
 
 
 /////////////////////////////////////////////
@@ -902,4 +904,31 @@
         
     }
 
+}
+
+
+/////////////////////////////////////////////
+/////////CONTACT
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    padding-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+            font-weight: 500;
+        }
+
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
+    }
 }
