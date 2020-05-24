@@ -168,7 +168,6 @@
 
 }
 
-
  
 /////////////////////////////////////////////
 /////////SIDE NAVIGATION
@@ -176,8 +175,9 @@
 .side-nav {
     font-size: 1.6rem;
     list-style: none;
-    // margin-top: 3.5rem;
+    margin-top: 3.5rem;
     
+
     //adjust to different viewpoint
     // @media only screen and (max-width: $bp-medium) {
     //     display: flex;
@@ -189,51 +189,8 @@
     //         margin: 0;
     //     }
 
-     /////////////////////RESPONSIVE NAV BAR 
-
-    .sidebarBtn {
-        display: none;
-    }
-    .sidebarBtn--menu{
-      font-size: 3rem;
-    }
-    .sidebarBtn.hide i:before{
-      content: '\f00d';
-      color: #fff;
-    }
-    @media only screen and (max-width: $bp-medium){
-    
-      .sidebarBtn {
-          display: block;
-          position: absolute;
-        //   top: 27px;
-          right: .5rem;
-      }
-    .side-nav__item.side-nav__item:not(:first-child){
-        /* width: 100%; */
-        display: none;
-      }
-    .side-nav__item.side-nav__item.show{
-        display: block;
-      }
-    .side-nav__item {
-        display: block;
-        float: left;
-      }
-    
-    .side-nav__item.side-nav__item:hover:after{
-        opacity: 0;
-      }
-    }
-
-   
-
-
-    
-
     &__item {
         position: relative;
-        width: 100%;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
@@ -247,7 +204,6 @@
         //occupy it to entire view 
         @media only screen and (max-width: $bp-medium) {
            flex: 1;
-           display: flex;
         }
 
         // to make the content vertically 
@@ -257,8 +213,9 @@
             // align-items: center;
             // justify-content: center;
         }
+
+
     }
-    
 
     &__item::before {
         content: "";
@@ -291,7 +248,7 @@
         text-decoration: none;
         text-transform: uppercase;
         display: block;
-        padding: 1.8rem 3rem;
+        padding: 1.5rem 3rem;
         //when use z-index, needs position propertity as well
         position: relative;
         z-index: 20;
@@ -300,14 +257,14 @@
         align-items: center;
         //to make the content vertically center
         @media only screen and (max-width: $bp-medium) {
-            // justify-content: center;
+            justify-content: center;
             padding: 2rem;
         }
 
         //to make the content vertically 
         @media only screen and (max-width: $bp-small) {
             // flex-direction: column;
-            padding: 1.5rem .8rem;
+            padding: 1.5rem .5rem;
         }
 
         @media only screen and (max-width: $bp-smallest) {
@@ -319,8 +276,8 @@
 
     //fomat icon size
     &__icon {
-        width: 2rem;
-        height: 2rem;
+        width: 1.75rem;
+        height: 1.75rem;
         margin-right: .8rem;
         fill: currentColor ;    //set the color change as the current color
 
@@ -328,12 +285,9 @@
         @media only screen and (max-width: $bp-small) {
             margin-right: 0.2rem;
             margin-bottom: .7rem;
-            width: 2rem;
-            height: 2rem;
-            padding: .1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 1.7rem;
+            height: 1.7rem;
+            padding:0 .3rem;
         }
     }
 }
@@ -973,7 +927,7 @@
     display: flex;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
-    color: var(--color-grey-dark-3);
+    color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
     padding-bottom: 1rem;
@@ -981,7 +935,7 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-small) {
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-weight: 500;
         }
 

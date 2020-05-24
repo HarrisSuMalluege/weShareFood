@@ -57,7 +57,7 @@
                         </a>
                     </li>
                     <li class="side-nav__item">
-                        <a href="index.html" class="side-nav__link">
+                        <a href="recipes.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
                             </svg>
@@ -65,7 +65,7 @@
                         </a>
                     </li>
                     <li class="side-nav__item">
-                        <a href="index.html" class="side-nav__link">
+                        <a href="neighbors.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-compass"></use>
                             </svg>
@@ -73,7 +73,7 @@
                         </a>
                     </li>
                     <li class="side-nav__item">
-                        <a href="index.html" class="side-nav__link">
+                        <a href="about.html" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-spinner10"></use>
                             </svg>
@@ -88,17 +88,13 @@
                             <span>Contact</span>
                         </a>
                     </li>
+                    <li class="sidebarBtn"><a href="#" class="side-nav__link"><i class="fa fa-bars sidebarBtn--menu"></i></a></li>
                 </ul>
-            
-                <div class="legal">
-                    &copy; 2020 by Portfolio. All rights reserved.
-                </div>
             </div>
-
             <main class="food-view">
                 <div class="cta">
                     <h2 class="cta__book-now">
-                        Good news! We have 4 free courses incoming days!
+                        Good news! We have 4 free courses in coming days!
                     </h2>
                     <button class="cta__btn">
                         <span class="cta__btn__visible">Book now</span>
@@ -108,12 +104,16 @@
                 <section class="section-contact" id="sectionBook">
                         <div class="contact">
                             <div class="contact__form">
+                                <div class="contact__title">
+                                    <h2 class="heading-secondary">
+                                        Contact us
+                                    </h2>
+                                    <p class="contact__title--text">Should you have any inquiry, please feel to shoot us an email at support@wesharefood.com, we'll get back to you as
+                                        soon as we can.</p>
+                                    <p class="contact__title--text"><b>Phone:</b> 612-888-FOOD</p>
+                                    <p class="contact__title--text"><b>Address:</b> 000 Nicollet Mall, Minneapolis, MN 55401</p>
+                                </div>
                                 <form action="#" class="form">
-                                    <div>
-                                        <h2 class="heading-secondary">
-                                            Contact us
-                                        </h2>
-                                    </div>
                                     <div class="form__group">
                                         <input type="text" class="form__input" placeholder="Full name" id="name" required>
                                         <label for="name" class="form__label">Full name</label>
@@ -170,7 +170,17 @@
                 </div>
             </main>
         </div>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.js -->
         
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+        <script src="js/nav.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+        <!-- endbuild -->
     
 </body>
 </html>

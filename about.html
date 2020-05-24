@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title> WSF &Iota; We Share Food</title>
+    </head>
+    
+    <body>
+        <div class="container-food">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.png" alt="weShareFood" class="logo"></a>
+    
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Tell me your favorite">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+    
+                </form>
+    
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+                        </svg>
+                        <span class="user-nav__notification">6</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bubbles4"></use>
+                        </svg>
+                        <span class="user-nav__notification">18</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User Photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Emily</span>
+                    </div>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="recipes.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                                </svg>
+                                <span>Recipes</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="neighbors.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-compass"></use>
+                                </svg>
+                                <span>Neighbors</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="about.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-spinner10"></use>
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="contact.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map2"></use>
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="sidebarBtn"><a href="#" class="side-nav__link"><i
+                                    class="fa fa-bars sidebarBtn--menu"></i></a></li>
+                    </ul>
+    
+                    <div class="legal">
+                        &copy; 2020 by Portfolio. All rights reserved.
+                    </div>
+                </div>
+
+                <main class="food-view">
+                
+                    About us
+                </main>
+            </div>
+
+            
+        </div>
+    
+    
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.js -->
+    
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js/nav.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+        <!-- endbuild -->
+    </body>
+    
+    </html>

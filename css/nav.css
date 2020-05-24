@@ -1,0 +1,38 @@
+
+/* /////////////////////RESPONSIVE NAV BAR */
+.sidebarBtn {
+    display: none;
+}
+.sidebarBtn--menu{
+  font-size: 30px;
+}
+
+
+.sidebarBtn.hide i:before{
+  content: '\f00d';
+  color: #fff;
+}
+@media screen and (max-width: 600px){
+
+  .sidebarBtn {
+      display: block;
+      position: absolute;
+      top: 27px;
+      right: 5px;
+  }
+.side-nav__item.side-nav__item:not(:first-child){
+    /* width: 100%; */
+    display: none;
+  }
+.side-nav__item.side-nav__item.show{
+    display: block;
+  }
+.side-nav__item {
+    display: block;
+    float: left;
+  }
+
+.side-nav__item.side-nav__item:hover:after{
+    opacity: 0;
+  }
+}
