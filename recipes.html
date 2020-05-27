@@ -7,14 +7,13 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
         <link rel="stylesheet" href="css/styles.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <title> WSF &Iota; We Share Food</title>
     </head>
 
     <body>
-        <body class="container-fluid">
+        <div class="container-food">
             <div class="header">
                 <a href="index.html"><img src="img/logo.png" alt="weShareFood" class="logo"></a>
 
@@ -47,86 +46,79 @@
                     </div>
                 </nav>
             </div>
+            <div class="content">
+                <div class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav__item side-nav__item--active">
+                            <a href="index.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="recipes.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                                </svg>
+                                <span>Recipes</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="neighbors.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-compass"></use>
+                                </svg>
+                                <span>Neighbors</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="about.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-spinner10"></use>
+                                </svg>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="contact.html" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map2"></use>
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li class="sidebarBtn"><a href="#" class="side-nav__link"><i
+                                    class="fa fa-bars sidebarBtn--menu"></i></a></li>
+                    </ul>
 
-            <div class="container__content">
-            <div class='sidebarMenu' id="sidebarMenu">
-                <span class="sidebarMenu__slide">
-                    <a href="#" onclick="openSlideMenu()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </span>
-            
-                <div id="sidebarContent" class="sidebarMenu__nav">
-                    <a href="#" class="sidebarMenu__nav--close" onclick="closeSlideMenu()">
-                        <i class="fa fa-times"></i>
-                        <!-- <span class="navigation__icon">&nbsp;</span> -->
-                    </a>
-                    <div class="sidebar">
-                        <ul class="side-nav">
-                            <li class="side-nav__item side-nav__item--active">
-                                <a href="index.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-home"></use>
-                                    </svg>
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li class="side-nav__item">
-                                <a href="recipes.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
-                                    </svg>
-                                    <span>Recipes</span>
-                                </a>
-                            </li>
-                            <li class="side-nav__item">
-                                <a href="neighbors.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-compass"></use>
-                                    </svg>
-                                    <span>Neighbors</span>
-                                </a>
-                            </li>
-                            <li class="side-nav__item">
-                                <a href="index.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-spinner10"></use>
-                                    </svg>
-                                    <span>About</span>
-                                </a>
-                            </li>
-                            <li class="side-nav__item">
-                                <a href="contact.html" class="side-nav__link">
-                                    <svg class="side-nav__icon">
-                                        <use xlink:href="img/sprite.svg#icon-map2"></use>
-                                    </svg>
-                                    <span>Contact</span>
-                                </a>
-                            </li>
-                        </ul>
-            
-                        <div class="legal">
-                            &copy; 2020 by Portfolio. All rights reserved.
-                        </div>
+                    <div class="legal">
+                        &copy; 2020 by Portfolio. All rights reserved.
                     </div>
                 </div>
+
+                <main class="food-view">
+
+                    <h1>Recipes</h1>
+                    <p>Learn</p>
+                </main>
             </div>
-           
-                    
 
-            </div>
 
-    <script>
-        function openSlideMenu() {
-            document.getElementById('sidebarContent').style.width = '250px';
-            document.getElementById('sidebarMenu').style.marginLeft = '250px';
-        }
-        function closeSlideMenu() {
-            document.getElementById('sidebarContent').style.width = '0';
-            document.getElementById('sidebarMenu').style.marginLeft = '-50px';
-        }
+        </div>
 
-    </script>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <!-- build:js js/main.js -->
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="js/nav.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+        <!-- endbuild -->
     </body>
-        
+
 </html>
