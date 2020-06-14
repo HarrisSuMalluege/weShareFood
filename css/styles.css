@@ -783,6 +783,12 @@ body {
   font-size: 1.35rem; }
   .recipesCard__main {
     margin-top: 1rem; }
+    .recipesCard__main a:link,
+    .recipesCard__main a:visited {
+      text-decoration: none;
+      color: var(--color-grey-dark-2); }
+    .recipesCard__main a:hover {
+      color: var(--color-primary); }
   .recipesCard__heading {
     font-size: 2rem; }
   .recipesCard__text {

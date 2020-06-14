@@ -1075,6 +1075,15 @@
 
     &__main {
         margin-top: 1rem;
+
+        & a:link,
+        & a:visited {
+            text-decoration: none;
+            color: var(--color-grey-dark-2);
+        }
+        & a:hover {
+            color: var(--color-primary);
+        }
     }
 
     &__heading{
