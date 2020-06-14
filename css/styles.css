@@ -778,6 +778,20 @@ body {
       .footer__menu-bar-item a:hover {
         color: var(--color-primary); }
 
+.recipesCard {
+  margin: 0 .25rem;
+  font-size: 1.35rem; }
+  .recipesCard__main {
+    margin-top: 1rem; }
+  .recipesCard__heading {
+    font-size: 2rem; }
+  .recipesCard__text {
+    font-size: 1.5rem;
+    text-align: justify; }
+  .recipesCard__muted {
+    font-size: 1.2rem;
+    color: var(--color-primary); }
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;

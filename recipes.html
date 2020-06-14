@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
         <link rel="stylesheet" href="css/styles.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
@@ -99,9 +101,110 @@
                 </div>
 
                 <main class="food-view">
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 4 free courses in coming days!
+                        </h2>
+                        <button class="cta__btn">
+                            <span class="cta__btn__visible">Book now</span>
+                            <span class="cta__btn__invisible">Only 4 seats left</span>
+                        </button>
+                    </div>
 
-                    <h1>Recipes</h1>
-                    <p>Learn</p>
+                    
+
+                    <div class="card-deck recipesCard">
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This is a longer card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-deck recipesCard recipesCard__main">
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This is a longer card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card recipesCard__main">
+                            <img class="card-img-top" src="./img/food-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title recipesCard__heading">Card title</h5>
+                                <p class="card-text recipesCard__text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newsLetters">
+                        <h2 class="newsLetters__heading-main">Be in the know</h2>
+                        <h4 class="newsLetters__heading-sub">Sign up to receive the latest from Us</h4>
+                        <div class="newsLetters__form">
+                            <form action="#" class="newsLetters__form-signUp">
+                                <input class="newsLetters__form-signUp-input" type="text" required placeholder="Enter your email address..">
+                                <button class="newsLetters__form-signUp-btn">sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <div class="social__icon">
+                            <a class="social__icon-1 btn-social-icon-facebook" href="http://facebook.com/"><i
+                                    class="fa fa-facebook fa-lg"></i></a>
+                            <a class=" social__icon-1 btn-social-icon-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter fa-lg"></i></a>
+                            <a class="social__icon-1 btn-social-icon-youtube" href="http://youtube.com/"><i
+                                    class="fa fa-youtube-play fa-lg"></i></a>
+                            <a class="social__icon-1" href="http://instagram.com/"><i class="fa fa-instagram fa-lg "></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="footer__menu">
+                        <ul class="footer__menu-bar">
+                            <li class="footer__menu-bar-item"><a href="#">FAQ</a></li>
+                            <li class="footer__menu-bar-item"><a href="#">Financing</a></li>
+                            <li class="footer__menu-bar-item"><a href="#">Privacy</a></li>
+                            <li class="footer__menu-bar-item"><a href="#">Terms of use</a></li>
+                            <li class="footer__menu-bar-item"><a href="#">Blog</a></li>
+                            <li class="footer__menu-bar-item"><a href="#">Career</a></li>
+                        </ul>
+                    
+                    </div>
                 </main>
             </div>
 
@@ -119,6 +222,7 @@
         <script src="js/nav.js"></script>
         <!-- <script src="js/script.js"></script> -->
         <!-- endbuild -->
+        
     </body>
 
 </html>
