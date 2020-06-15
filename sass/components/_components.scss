@@ -357,10 +357,37 @@
 
 .gallery {
     display: flex;
+    width: 100%;
+    // height: auto;
+    height: 35rem;
+    overflow: hidden;
+
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        height: auto;
+        overflow: hidden;
+    }
 
     &__photo {
-        width: 100%;
+        // width: 70rem;
+        height: 35rem;
         display: block;
+        
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    h3 {
+        font-size: 3rem;
+        text-shadow: 0  .4rem .8rem var(--color-grey-dark-2);
+    }
+    p {
+        font-size: 2rem;
+        text-shadow: 0  .4rem .8rem var(--color-grey-dark-2);
     }
 }
 
@@ -953,6 +980,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border-radius: 6%;
 
                 @media only screen and (max-width: $bp-medium) {
                     height: 50%;
@@ -1131,4 +1159,12 @@
 }
 
 
+/////////////////////////////////////////////
+/////////BREADCRUMB
+.breadcrumbBar {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--color-grey-light-2);
+    align-items: center;
+}
 

@@ -87,6 +87,7 @@
         }
 }
 
+
 .description {
     background-color: #fff;
     box-shadow: var(--shadow-light);
@@ -168,10 +169,26 @@
         @media only screen and (max-width: $bp-small) {
          width: 100%;
      }
-    
 
     }   
 }
 
 /////////////////////////////////////////////
-/////////ABOUT US
+/////////Recipes
+
+.recipesContent {
+    font-size: 1.4rem;
+    // display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-2);
+    border: var(--line);
+
+        //to make the content vertically center
+        @media only screen and (max-width: $bp-medium) {
+            padding: 3rem;
+        }
+        //to make the content vertically 
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;   //1rem = 8px, 8px / 16
+        }
+}
