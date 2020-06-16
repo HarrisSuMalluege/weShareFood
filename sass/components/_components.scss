@@ -447,7 +447,7 @@
 
     &__location {
         font-size: 1.2rem;
-        display: flex;
+        // display: flex;
         vertical-align: center;
     }
 
@@ -500,12 +500,14 @@
     border: none;
     color: var(--color-primary);
     font-size: inherit;
+    font-size: 1.6rem;
     border-bottom: .1rem solid currentColor;
     padding-bottom: .2rem;
     display: inline-block;
     background-color: transparent;
     cursor: pointer;
     transition: all .2s;
+    text-align: left;
 
     & span {
         margin-left: .3rem;
@@ -1030,6 +1032,9 @@
                 font-size: 1.8rem;
                 padding-left: 2rem;
             }
+            & p:last-of-type {
+                margin-bottom: 3rem;
+            }
         }
 
         
@@ -1097,9 +1102,9 @@
 /////////RECIPES
 
 .recipesCard {
-    // margin-left: 1rem;
-    margin: 0 .25rem;
+    padding: 0 2rem;
     font-size: 1.35rem;
+    margin-bottom: 10rem;
 
     &__main {
         margin-top: 1rem;
@@ -1166,5 +1171,8 @@
     height: 4rem;
     background-color: var(--color-grey-light-2);
     align-items: center;
+    font-size: 1.8rem;
+    
+    
 }
 
