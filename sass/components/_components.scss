@@ -424,8 +424,8 @@
         @media only screen and (max-width: $bp-small) {
             font-size: 1rem;
             font-weight: 400;
-            width:17rem;
-            padding: 1rem 1rem;
+            // width:17rem;
+            padding: 1rem .8rem;
         }
     }
 
@@ -468,7 +468,8 @@
         justify-content: center;
 
         @media only screen and (max-width: $bp-small) {
-            padding: 0 1.5rem;
+            padding: 0 1rem;
+            margin-left: .5rem;
             
         }
     }
@@ -499,7 +500,7 @@
 .btn-inline {
     border: none;
     color: var(--color-primary);
-    font-size: inherit;
+    // font-size: inherit;
     font-size: 1.6rem;
     border-bottom: .1rem solid currentColor;
     padding-bottom: .2rem;
@@ -508,6 +509,11 @@
     cursor: pointer;
     transition: all .2s;
     text-align: left;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+    }
+    
 
     & span {
         margin-left: .3rem;
